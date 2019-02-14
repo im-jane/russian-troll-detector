@@ -1,5 +1,13 @@
 
 
-#mainNavbar {
+#navbar {
     background-color: #dee6efb3;
+}
+
+#enter-handle {
+    margin-top: 20px;
+}
+
+#submitUsername {
+    margin-left: 10px;
 }

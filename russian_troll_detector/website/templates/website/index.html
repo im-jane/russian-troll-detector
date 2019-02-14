@@ -10,7 +10,7 @@
 <script src="{% static 'website/js/bootstrap.min.js' %}"></script>
 <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
 
-<nav class="navbar navbar-expand-lg" id="mainNavbar">
+<nav class="navbar navbar-expand-lg" id="navbar">
   <div class="container">
     <div class="navbar-header">
       <a class="navbar-brand" href="">Russian Troll Detector</a>
@@ -28,18 +28,20 @@
   </div>
 </nav>
 
-<div class="container">
-  Enter the Twitter handle<br>
-   <form class="form-inline">
-        <input type="text" id="username" placeholder=""><br>
-        <!--Need to put type to button in order to prevent from refreshing-->
-        <button class="btn btn-info" type="button" id="submitUsername">Submit</button>
-   </form>
+<div class="container fluid" id="main-container">
+  <section id="enter-handle">
+      Enter the Twitter handle<br>
 
-  <p id="result">
-    Result?
-  </p>
+     <form class="form-inline">
+          <input type="text" id="username" placeholder=""><br>
+          <!--Need to put type to button in order to prevent from refreshing-->
+          <button class="btn btn-info" type="button" id="submitUsername">Submit</button>
+     </form>
 
+    <p id="result">
+      Result?
+    </p>
+  </section>
 </div>
 
 
